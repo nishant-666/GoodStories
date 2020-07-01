@@ -6,6 +6,7 @@
   "author": "Nishant",
   "license": "MIT",
   "dependencies": {
+    "app-icon": "^0.13.2",
     "connect-mongo": "^3.2.0",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",

@@ -1,0 +1,138 @@
+
+  <div class="ui divider"></div>
+  <h2 class="ui header" style="text-align: center;margin-top:0px;margin-bottom:0px">
+  <img class="ui image" src="https://img.icons8.com/plasticine/2x/flower-doodle.png" style="margin-right: -20px;">
+  <div class="content" style="color: white;padding:20px;text-align:center;">
+   Public Stories
+  </div>
+  <img class="ui image" src="https://img.icons8.com/plasticine/2x/flower-doodle.png" style="margin-left: -20px;">
+  <div class="ui divider"></div>
+</h2>
+
+
+<div id="desktop">
+<div class="ui grid">
+{{#each stories}}
+
+<div class="col" style="text-align:center">
+<div class="ui fluid card">
+     <div class="content">
+    <div class="header">{{{editIcon user ../user _id }}}</div>
+  </div>
+
+  <div class="content">
+    <div class="header">{{title}}</div>
+  </div>
+  <div class="content">
+    
+    <div class="ui small feed">
+      <div class="event">
+        <div class="content">
+          <div class="summary" style="text-align: center;">
+             {{stripTags (truncate body 100)}}
+          </div>
+
+        </div>
+      </div>
+      <div class="event">
+        <div class="content" style="text-align: center;">
+           <div style="margin-top: 10px;">
+            By: <a href="/stories/user/{{user._id}}">{{user.displayName}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="extra content">
+ <a href="/stories/{{_id}}" class="ui secondary button">
+  <i class="book icon"></i>
+  Read more..</a>
+  </div>
+</div>
+</div>
+
+{{else}}
+    <p>No Stories to display</p>
+{{/each}}
+</div>
+</div>
+
+
+<div id="mobile">
+{{#each stories}}
+
+<div class="col" style="text-align:center">
+<div class="ui fluid card" style="margin-top:10px;margin-bottom:10px">
+     <div class="content">
+    <div class="header">{{{editIcon user ../user _id }}}</div>
+  </div>
+
+  <div class="content">
+    <div class="header">{{title}}</div>
+  </div>
+  <div class="content">
+    
+    <div class="ui small feed">
+      <div class="event">
+        <div class="content">
+          <div class="summary" style="text-align: center;">
+             {{stripTags (truncate body 100)}}
+          </div>
+         
+        </div>
+      </div>
+      <div class="event">
+        <div class="content" style="text-align: center;">
+          <div style="margin-top: 10px;">
+            By: <a href="/stories/user/{{user._id}}">{{user.displayName}}</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="extra content">
+      
+ <a href="/stories/{{_id}}" class="ui secondary button">
+  <i class="book icon"></i>
+  Read more..</a>
+  </div>
+</div>
+</div>
+
+{{else}}
+    <p>No Stories to display</p>
+{{/each}}
+</div>
+
+<style>
+    
+body{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	background-color:#CCC;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#f44336;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	
+}
+.float:hover{
+	background-color: #ef5350;
+	color:#FFF;
+}
+.my-float{
+	margin-top:19px;
+}
+</style>
+
+<a href="/stories/add" class="float">
+<i class="fa fa-plus my-float" style="font-size: 25px;"></i>
+</a>

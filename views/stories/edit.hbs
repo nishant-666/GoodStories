@@ -1,0 +1,82 @@
+
+
+<div id="desktop">
+    <div class="ui divider"></div>
+    <h1 class="ui header" style="color: white;text-align:center;">Edit Stories</h1>
+    <div class="ui divider"></div>
+<div class="col-md-6 offset-md-3" style="margin-top: 20px;">
+<div class="ui fluid card rounded-0">
+  <div class="content">
+    <div class="description">
+     <form class="ui form" action="/stories/{{story._id}}" method="POST">
+     <input type="hidden" name="_method" value="PUT">
+  <div class="field">
+    <label>Title of the Story</label>
+    <input type="text" name="title" placeholder="Title" value="{{story.title}}">
+  </div>
+  <div class="field">
+    <label for="status">Select Privacy</label>
+    <select name="status" id="status">
+      
+      <option value="Public" selected>Public</option>
+      <option value="Private">Private</option>
+    
+    </select>
+  </div>
+  <div class="field">
+   <div class="field">
+    <label>Enter your story here..</label>
+    <textarea name="body" placeholder="">{{story.body}}</textarea>
+  </div>
+  </div>
+  <input type="submit" value="Save" class="ui primary button">
+
+<a href = "/dashboard" class="ui secondary button">
+  Discard
+</a>
+</form> 
+    </div>
+  </div>
+</div>  
+</div>
+</div>
+
+
+
+<div id="mobile">
+<div class="col-md-6 offset-md-3" style="margin-top: 50px;">
+<div class="ui fluid card rounded-0">
+  <div class="content">
+    <div class="description">
+      <form class="ui form" action="/stories/{{story._id}}" method="POST">
+     <input type="hidden" name="_method" value="PUT">
+  <div class="field">
+    <label>Title of the Story</label>
+    <input type="text" name="title" placeholder="Title" value="{{story.title}}">
+  </div>
+  <div class="field">
+    <label for="status">Select Privacy</label>
+    <select name="status" id="status">
+      
+      <option value="Public" selected>Public</option>
+      <option value="Private">Private</option>
+    
+    </select>
+  </div>
+  <div class="field">
+   <div class="field">
+    <label>Enter your story here..</label>
+    <textarea name="body" value="{{story.body}}">{{story.body}}</textarea>
+  </div>
+  </div>
+  <input type="submit" value="Save" class="ui primary button">
+
+<a href = "/dashboard" class="ui secondary button">
+  Discard
+</a>
+</form> 
+    </div>
+  </div>
+</div>  
+</div>
+</div>

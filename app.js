@@ -9,11 +9,12 @@ const methodOverride = require('method-override')
 const session = require('express-session')
 const mongoose = require('mongoose')
 const MongoStore = require('connect-mongo')(session)
+var sslRedirect = require('heroku-ssl-redirect');
 var favicon = require('serve-favicon')
 
+app.use(sslRedirect('production'));
+
 dotenv.config({path:'./config/config.env'})
-
-
 
 require('./config/passport')(passport)
 

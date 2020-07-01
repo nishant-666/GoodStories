@@ -12,7 +12,7 @@ const MongoStore = require('connect-mongo')(session)
 var sslRedirect = require('heroku-ssl-redirect');
 var favicon = require('serve-favicon')
 
-app.use(sslRedirect('production'));
+app.use(sslRedirect());
 
 dotenv.config({path:'./config/config.env'})
 

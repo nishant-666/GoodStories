@@ -2,14 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Francois+One|Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Oswald|Sacramento&display=swap');
-body{
-  background-image: linear-gradient(
-    45deg,
-    #000000,
-    #152331
-  )
 
-}
 .container-login{
     text-align: center;
     margin-top: 20px;

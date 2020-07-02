@@ -1,0 +1,148 @@
+
+<body class="hold-transition sidebar-mini">
+
+  
+<div class="wrapper">
+  
+  <!-- Navbar -->
+  
+    <div style="padding: 10px;" id="desktop">
+      <nav class="main-header navbar">
+   <button class="ui red button" data-widget="pushmenu">
+      <i class="bars icon"></i>
+      Menu
+  </button>
+  </nav>
+    </div>
+
+
+
+   <div style="padding: 10px;" id="mobile">
+   <button class="ui red button" data-widget="pushmenu">
+      <i class="bars icon"></i>
+      Menu
+  </button>
+    </div>
+
+  <div id="desktop">
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+   
+     <div class="brand-link" style="padding: 20px;">
+        <i class="goodreads icon" class="brand-image img-circle elevation-3" style="font-size:40px;display:inline"></i>
+  
+        <h2 class="ui header brand-text" style="margin:10px;color:#fafafa;font-family: 'Sacramento', cursive;font-size:33px;display:inline">GoodStories</h2>
+    </div>
+    <!-- Sidebar -->
+    <div class="sidebar">
+     
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview menu-open">
+            
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="/stories" class="nav-link">
+                   <i class="heart icon"></i>
+                  <p>Public Stories</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/dashboard" class="nav-link">
+                   <i class="home icon"></i>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a  href="/auth/logout" class="nav-link">
+              <i class="logout icon"></i>
+              <p>
+              Sign out
+                
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+  </div>
+
+  <div id="mobile">
+  <aside class="main-sidebar sidebar-dark-primary elevation-4" style="width: 40%;">
+   
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+       <div class="info">
+          <h2 class="ui header" style="margin:10px;color:#fafafa;font-family: 'Sacramento', cursive;font-size:30px">GoodStories</h2>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview menu-open">
+            
+            <ul class="nav nav-treeview" style="font-size: 13px;">
+              <li class="nav-item">
+                <a href="/stories" class="nav-link">
+                   <i class="heart icon"></i>
+                  <p >Public Stories</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/dashboard" class="nav-link">
+                   <i class="home icon"></i>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item" style="font-size: 13px;">
+            <a  href="/auth/logout" class="nav-link">
+              <i class="logout icon"></i>
+              <p>
+              Sign out
+                
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+  </div>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="background-color: #212121">
+    {{{body}}}
+  </div>
+
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.min.js"></script>
+</body>
+</html>
+
+
+

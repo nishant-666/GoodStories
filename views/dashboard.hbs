@@ -9,13 +9,13 @@
   Greetings, <span style="color:#212121">{{name}}</span>
   </div>  
  
-  <p style="font-family: 'Carrois Gothic SC', sans-serif;margin-top:20px">Welcome to <b style="font-family: 'Sacramento', cursive;font-size:34px">GoodStories</b></p>
+  <p style="font-family: 'Carrois Gothic SC', sans-serif;margin-top:20px">Welcome to <b style="font-family: 'Sacramento', cursive;font-size:34px;color:#f44336">GoodStories</b></p>
       
 </div>
 </div>
 
 {{#if stories}}
-  <div id="desktop">
+  <div id="desktop" style="padding:20px">
     <div class="ui divider"></div>
     <h1 class="ui header" style="color: white;padding:0px;text-align:center;">Your Stories</h1>
     <div class="ui divider"></div>
@@ -33,7 +33,7 @@
         <td data-label="Date">{{formatDate createdAt 'MMMM Do YYYY, h:mm a'}}</td>
         <td data-label="Status"><span class="dash-status">{{status}}</span></td>
         <td data-label="Delete">
-          <a class="ui blue fluid button" href="/stories/edit/{{_id}}">
+          <a class="ui fluid button" style="background-color:#f44336;color:whitesmoke" href="/stories/edit/{{_id}}">
           <i class="edit icon"></i>
           Edit Story
         </a>

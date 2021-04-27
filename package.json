@@ -20,7 +20,7 @@
     "morgan": "^1.10.0",
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0",
-    "redis": "^3.0.2",
+    "redis": "^3.1.1",
     "redis-server": "^1.2.2",
     "serve-favicon": "^2.5.0"
   },
